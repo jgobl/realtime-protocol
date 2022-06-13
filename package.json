@@ -1,0 +1,26 @@
+{
+  "name": "realtimeprotocol",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "startServerAndClient": "ts-node index.ts 3000 20",
+    "startServer": "ts-node server/startserver.ts 3000",
+    "startClient": "ts-node client/startclient 3000"
+  },
+  "dependencies": {
+    "crc-32": "^1.2.2",
+    "dotenv": "^16.0.1",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@types/uuid": "^8.3.4",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
